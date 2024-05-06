@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+	<title>TP</title>
+	<link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+	<header>
+		<ul>
+			<li><a href="index.html">Accueil</a></li>
+			<li><a href="chambres.html">Nos chambres</a></li>
+			<li class="emphase"><a href="reservations.html">Réserver</a></li>
+			<li><a href="contact.html">Nous retrouver</a></li>
+		</ul>
+	</header>
+	<div>
+		<form action="mailto:test@iut.fr" method="post" enctype="text/plain">
+			<fieldset>
+				<p><label for="nom">Nom :</label>
+				<input type="text" id="nom" name="nom" placeholder="Entrez votre nom" required/>
+				<label for="prenom">Prénom :</label>
+				<input type="text" id="prenom" name="prenom" placeholder="Entrez votre prénom" /></p>
+				<p><label for="mail">Mail :</label>
+				<input type="email" required id="mail" name="mail" placeholder="Entrez votre mail"/>
+				<label for="tel">Téléphone :</label>
+				<input type="tel" id="tel" name="tel" placeholder="numéro de téléphone"/></p>
+				<select name="chambre">
+					<option value="1">La Calade</option>
+					<option value="2">Les Lucioles</option>
+					<option value="3">La Fontaine</option>
+					<option value="4">Les Oliviers</option>
+				</select>
+				<p><label for="debut">Date d'arrivée :</label>
+				<input type="date" id="debut" name="debut" required/>
+				<label for="fin">Date de fin :</label>
+				<input type="date" id="fin" name="fin" required/></p>
+				<p><label for="nb">Nombre de personnes :</label>
+				<input type="number" id="nb" name="nb" value="1"/>
+				<label for="pj">Petits déjeuners :</label>
+				<input type="checkbox" id="pj" name="pj" />
+				<p><input type="submit" value="" /></p>
+			</fieldset>
+		</form>
+	</div>
+	<footer>
+		<ul>
+			<li><a href="legal.html">Mentions légales</a></li>
+			<li><a href="contact.html">Contacts</a></li>
+		</ul>
+	</footer>
+</body>
+</html>
